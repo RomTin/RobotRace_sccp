@@ -22,7 +22,7 @@ public class RacingRobot extends BasicRobot{
     }
 
     public void Run(){
-        speed_query=(int)(Math.random()*100);
+        speed_query=(int)(Math.random()*100) + 20;
         if(speed_query > speed){
             setDistance(getDistance() + (int)speed/10);
         }else{
