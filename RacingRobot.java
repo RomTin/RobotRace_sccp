@@ -12,7 +12,7 @@ public class RacingRobot extends BasicRobot{
 
     public void Action(){
         setEnergy(getEnergy() - 5);
-        if(luck+(int)(Math.random()*50)>45){
+        if(luck+(int)(Math.random()*70)>50){
             Run();
             printRacingInfo();
         }else{
