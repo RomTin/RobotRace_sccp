@@ -15,9 +15,10 @@ public class RacingRobot extends BasicRobot{
         if(luck + (int)(Math.random()*70)>50){
             Run();
             printRacingInfo();
+            System.out.print("\n");
         }else{
             printRacingInfo();
-            System.out.println(getName() + " は故障が発生し動けなかった！");
+            System.out.println(" \"故障が発生し動けなかった！\"");
         }
     }
 
@@ -36,7 +37,7 @@ public class RacingRobot extends BasicRobot{
         for(int i=0; i<dis_query/3; i++){
             System.out.print("=");
         }
-        System.out.println(">");
+        System.out.print(">");
     }
 
     public String getRobotInfo(){
