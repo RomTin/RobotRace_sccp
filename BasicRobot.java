@@ -3,7 +3,7 @@ public class BasicRobot{
     private int robotid;
     private String name;
     private int distance = 0;
-    private int energy = 100;
+    private int energy = 120;
 
     public BasicRobot(String name){
         this.name = name;
