@@ -1,6 +1,5 @@
 public class RacingRobot extends BasicRobot{
     private int speed;
-    private int luck;
     private int dis_query;
     private int speed_query;
 
