@@ -16,6 +16,7 @@ public class FlyingRobot{
 
     public void Fly(){
         setDistance(Accelerate() + getDistance());
+
     }
 
     private int Accelerate(){
@@ -25,5 +26,6 @@ public class FlyingRobot{
     private int Boost(){
         accel = -(int)(Math.random()*25);
         speed += accel;
+        return speed;
     }
 }
