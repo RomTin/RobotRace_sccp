@@ -2,4 +2,6 @@ SCCP-2014!!!!
 
 racing ver. -beta
 
-flying ver. -under development
+flying ver. -beta
+
+advanced ver. -under planning
