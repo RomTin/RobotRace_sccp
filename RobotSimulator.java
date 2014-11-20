@@ -36,11 +36,11 @@ public class RobotSimulator{
 
         for(int i=0; i<3; i++){
             Robots[i] = new RacingRobot(NameArray[i]);
-            System.out.println(Robots[i].getRobotInfo());
+            System.out.println(((RacingRobot)Robots[i]).getRobotInfo());
         }
         for(int i=3; i<6; i++){
             Robots[i] = new FlyingRobot(NameArray[i]);
-            System.out.println(Robots[i].getRobotInfo());
+            System.out.println(((FlyingRobot)Robots[i]).getRobotInfo());
         }
     }
 
