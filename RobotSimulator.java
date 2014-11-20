@@ -1,11 +1,15 @@
 public class RobotSimulator{
 
     public static void main(String[] args){
-        RacingRobot[] Robots = new RacingRobot[5];
-        String[] NameArray = {"GUNDAM","MACROSS","GETTER","Mk.28","SUSHI"};
+        BasicRobot[] Robots;
+        String[] NameArray = {"GUNDAM","MACROSS","GETTER","Mk.28","SUSHI","MAGURO"};
 
-        for(int i=0; i<5; i++){
+        for(int i=0; i<3; i++){
             Robots[i] = new RacingRobot(NameArray[i]);
+            System.out.println(Robots[i].getRobotInfo());
+        }
+        for(int i=3; i<6; i++){
+            Robots[i] = new FlyingRobot(NameArray[i]);
             System.out.println(Robots[i].getRobotInfo());
         }
 
@@ -15,9 +19,9 @@ public class RobotSimulator{
 
         System.out.println("\t〜レース開始！！〜");
 
-        for(int i=0; i<20; i++){
+        for(int i=0; i<10; i++){
 
-            for(int j=0; j<5; j++){
+            for(int j=0; j<6; j++){
                 Robots[j].Action();
             }
             System.out.println("---------------------------------------------");
