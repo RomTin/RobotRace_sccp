@@ -3,7 +3,7 @@ public class BasicRobot{
     private int robotid;
     private String name;
     private int distance = 0;
-    private int energy = 120;
+    private int energy = 100;
 
     public BasicRobot(String name){
         this.name = name;
@@ -35,8 +35,7 @@ public class BasicRobot{
     }
 
     public String getInfo(){
-        return String.format("Type:%d[%s]\t(EN=%d,POS=%d)", id, name, energy, distance);
+        return String.format("Type:%d[%s]\t", id, name);
     }
 
 }
-
