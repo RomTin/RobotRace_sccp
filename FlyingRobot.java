@@ -5,21 +5,19 @@ public class FlyingRobot{
     /** max must be under 500. */
     private int speed;
     private int accel;
-    private int fuel;
 
     public BasicFighter(String name, int speed){
         this.name = name;
         maxspeed = speed;
-        fuel = 1000;
-
     }
 
     public void Fly(){
         setDistance(Accelerate() + getDistance());
-
+        Boost();
     }
 
     private int Accelerate(){
+        setEnergy(getEnergy() - 10);
         return speed*1.5 + (accel*Math.pow(1.5, 2) / 2);
     }
 
