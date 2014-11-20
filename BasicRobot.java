@@ -1,9 +1,11 @@
-public class BasicRobot{
+public class BasicRobot implements Forwardable{
     private static int id=0;
     private int robotid;
     private String name;
     private int distance = 0;
     private int energy = 100;
+
+    public void forward(){}
 
     public BasicRobot(String name){
         this.name = name;
@@ -35,7 +37,7 @@ public class BasicRobot{
     }
 
     public String getInfo(){
-        return String.format("Type:%d[%s]\t(EN=%d,POS=%d)", id, name, energy, distance);
+        return String.format("Type:%d[%s]\t", id, name);
     }
 
 }
