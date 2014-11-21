@@ -8,8 +8,8 @@ public class FlyingRobot extends BasicRobot implements Forwardable{
     public FlyingRobot(String name){
         super(name);
         wing = new WingParts(40);
-        luck = 30;
-        speed = 30;
+        luck = 60;
+        speed = 40;
     }
 
     public void forward(){
